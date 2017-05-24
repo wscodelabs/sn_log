@@ -6,4 +6,4 @@ l.log('error', 'this is simple msg new',null, function(err,res){
 
   if(res)
     console.log('resp');  
-})
+});

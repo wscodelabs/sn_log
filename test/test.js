@@ -1,10 +1,18 @@
 var assert = require('assert');
+var snLog = require('../distribution/index');
 var correct_api='CMagAnLtRY2S0s5uWm4U';
 var incorrect_api='skjdfhlusdfoiuhwljfdsh';
-describe('valid_api_Call', function() {
-  describe('will_push', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+
+describe('making log api call', function() {
+  it('should return error when the invalid API key is send', function() {
+    new snLog(incorrect_api).log('sample_group', 'sample msg', null, function(err, resp){
+      assert.equal(null, resp);
     });
   });
+
+  it('should return error null if we pass correct params', function(){
+    new snLog(correct_api).log('error', 'sample msg', null, function(err, resp){
+      assert.equal(null, err);
+    });
+  })
 });
