@@ -1,0 +1,28 @@
+{
+  "name": "sn_log",
+  "version": "1.0.0",
+  "description": "javascript api for logging app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wscodelabs/sn_log.git"
+  },
+  "keywords": [
+    "logging",
+    "debugging",
+    "analytics",
+    "benchmark"
+  ],
+  "author": "wscodelabs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wscodelabs/sn_log/issues"
+  },
+  "homepage": "https://github.com/wscodelabs/sn_log#readme",
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  }
+}
