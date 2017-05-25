@@ -11,7 +11,7 @@ describe('making log api call', function() {
   });
 
   it('should return error null if we pass correct params', function(){
-    new snLog(correct_api).log('error', 'sample msg', null, function(err, resp){
+    new snLog(correct_api).log('error', 'this is testing sample message sample msg', null, function(err, resp){
       assert.equal(null, err);
     });
   })
